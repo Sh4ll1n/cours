@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- <form action="#" method="post" onsubmit="verif(event);">
+
+        <label for="prenom">Prenom</label>
+        <input type="text" id="prenom" name="prenom">
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="email">Mail</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Soumettre">
+    </form> -->
+
+    <form action="#" method="post" onsubmit="verif(event);">
+
+        <label for="num1">Premier chiffre</label>
+        <input type="text" id="num1" name="num1">
+        <div id="error"></div>
+        <label for="op">Opérateur</label>
+        <select name="op" id="op">
+            <option value="">--Please choose an option--</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+
+        <label for="num2">Second chiffre</label>
+        <input type="text" id="num2" name="num2">
+
+        <input type="submit" value="Soumettre">
+
+    </form>
+    <div class="resultat">
+        <input type="text" name="resultat" id="resultat" disabled>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>
